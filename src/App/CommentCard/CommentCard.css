@@ -1,0 +1,19 @@
+
+.CommentCard {
+  box-sizing: border-box;
+  background-color: var(--secondary-color-400);
+  color: var(--primary-color-100);
+
+  display: flex;
+  flex-direction: row;
+}
+
+.CommentCard-image {
+  background-color: var(--primary-color-300);
+  margin: var(--spacing-3);
+  min-width: 64px;
+}
+
+.CommentCard-textContainer {
+  text-align: left;
+}
