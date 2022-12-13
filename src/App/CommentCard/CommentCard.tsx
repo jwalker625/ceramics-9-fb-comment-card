@@ -16,11 +16,13 @@ const CommentCard = (props: CommentCardProps) => {
 
   return (
     <div className="CommentCard">
-      <img src={imageUrl} alt="Image of Poster" />
-      <div>
-        <h1>{name}{' '}{location}</h1>
-        <p>{comment}</p>
-        <div>
+      <img className="CommentCard-image" src={imageUrl} alt="Image of Poster" />
+      <div className="CommentCard-textContainer">
+        <div className="CommentCard-bio">
+          <h2>{name}{' '}{location}</h2>
+          <p>{comment}</p>
+        </div>
+        <div className="CommentCard-timeElapsed">
           {timeElapsed}{' '}
           ago
         </div>
